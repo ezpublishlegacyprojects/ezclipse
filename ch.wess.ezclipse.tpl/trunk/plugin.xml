@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+        id="ch.wess.ezclipse.tpleditor"
+        point="org.eclipse.ui.editors">
+        <editor
+            name="%ezclipse.tpleditor.name"
+            extensions="tpl"
+            default="true"
+            icon="icons/ezlogo.gif"
+            contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
+            class="ch.wess.ezclipse.tpl.editor.TPLEditor"
+            id="ch.wess.ezclipse.tpl.editors.TPLEditor">
+        </editor>
+    </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <wizard
+            category="ch.wess.ezclipse.core.newwizardcategory"
+            class="ch.wess.ezclipse.tpl.wizards.internal.NewTemplateWizard"
+            icon="icons/ezlogo.gif"
+            id="ch.wess.ezclipse.tpl.wizards.newtplwizard"
+            name="%wizard.name.0">
+      </wizard>
+   </extension>
+   <extension
+         id="ch.wess.ezclipse.tpl.marker"
+         name="TPL errors marker"
+         point="org.eclipse.core.resources.markers">
+         <super type="org.eclipse.core.resources.problemmarker"/>
+         <super type="org.eclipse.core.resources.textmarker"/>
+         <persistent value="true"/>
+   </extension>
+   <extension
+          point="org.eclipse.core.runtime.preferences">
+       <initializer
+             class="ch.wess.ezclipse.tpl.preferences.internal.PreferenceInitializer">
+       </initializer>
+    </extension>
+    <extension
+          point="org.eclipse.ui.preferencePages">
+       <page 
+             category="ch.wess.ezclipse.core.preferences"
+             class="ch.wess.ezclipse.tpl.preferences.internal.TPLColorPreferencePage"
+             id="ch.wess.ezclipse.preferences.TPLColorPreferencePage"
+             name="%ezclipse.preferences.tplsyntaxHigh" />
+    </extension>
+</plugin>
