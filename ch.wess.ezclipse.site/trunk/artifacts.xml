@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository class='org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository' version='1.0.0'?>
+<repository name='file:/home/asahli/workspace/ch.wess.ezclipse.site/ - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+  <properties size='2'>
+    <property name='p2.compressed' value='false'/>
+    <property name='p2.timestamp' value='1244905300652'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='6'>
+    <artifact classifier='osgi.bundle' id='ch.wess.ezclipse.core' version='1.0.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='2234635'/>
+        <property name='download.size' value='2234635'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.wess.ezclipse.varbrowser' version='1.0.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='20549'/>
+        <property name='download.size' value='20549'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.wess.ezclipse.tpl' version='1.0.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='51107'/>
+        <property name='download.size' value='51107'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='ch.wess.ezclipse' version='1.0.0'>
+      <properties size='2'>
+        <property name='artifact.size' value='1129'/>
+        <property name='download.size' value='1129'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.wess.ezclipse.ini' version='1.0.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='32249'/>
+        <property name='download.size' value='32249'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.wess.ezclipse.communcation' version='1.0.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='10563'/>
+        <property name='download.size' value='10563'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>
