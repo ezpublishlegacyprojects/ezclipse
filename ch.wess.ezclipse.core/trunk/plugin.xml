@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="ch.wess.ezclipse.core.newwizardcategory"
+            name="%category.name.0">
+      </category>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="ch.wess.ezclipse.core.preferences.internal.MainPage"
+            id="ch.wess.ezclipse.core.preferences"
+            name="%page.name.0">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="ch.wess.ezclipse.core.view.category"
+            name="eZclipse">
+      </category>
+   </extension>
+
+</plugin>
