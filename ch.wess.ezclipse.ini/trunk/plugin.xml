@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+    <extension
+        id="ch.wess.ezclipse.editors.INIEditor"
+        point="org.eclipse.ui.editors">
+        <editor
+            name="%ezclipse.inieditor.name"
+            default="true"
+            extensions="ini,ini.append.php"
+            icon="icons/inilogo.gif"
+            contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
+            class="ch.wess.ezclipse.ini.editor.INIEditor"
+            id="ch.wess.ezclipse.inieditor.INIEditor"
+            >
+        </editor>
+    </extension>
+    <extension
+          point="org.eclipse.core.runtime.preferences">
+       <initializer
+             class="ch.wess.ezclipse.ini.preferences.internal.PreferenceInitializer">
+       </initializer>
+    </extension>
+    <extension
+          point="org.eclipse.ui.preferencePages">
+       <page 
+             category="ch.wess.ezclipse.core.preferences"
+             class="ch.wess.ezclipse.ini.preferences.internal.INIColorPreferencePage"
+             id="ch.wess.ezclipse.preferences.INIColorPreferencePage"
+             name="%ezclipse.preferences.inisyntaxHigh" />
+    </extension>
+    <extension
+          point="org.eclipse.ui.newWizards">
+       <wizard
+             category="ch.wess.ezclipse.core.newwizardcategory"
+             class="ch.wess.ezclipse.ini.wizards.internal.NewINIWizard"
+             icon="icons/inilogo.gif"
+             id="ch.wess.ezclipse.ini.wizard.newiniwizard"
+             name="%wizard.name.0">
+       </wizard>
+    </extension>
+</plugin>
