@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="ch.wess.ezclipse"
+      label="eZclipse"
+      version="1.0.0"
+      provider-name="Web Engineering Sahli &amp; Stalder"
+      nl="en">
+
+   <description>
+      eZclipse is an Eclipse plug-in for supporting the CMS eZ Publish.
+   </description>
+
+   <copyright>
+      WESS eZ Publish Eclipse plug-in
+Copyright (C) 2009  Web Engineering Sahli &amp; Stalder (http://www.wess.ch)
+This program is free software: you can redistribute it and/or
+modify
+it under the terms of the GNU General Public License as published
+by
+the Free Software Foundation, either version 3 of the License,
+or
+any later version.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;
+   </copyright>
+
+   <url>
+      <discovery label="Web Engineering Sahli &amp; Stalder" url="http://www.wess.ch"/>
+   </url>
+
+   <plugin
+         id="ch.wess.ezclipse.communcation"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="ch.wess.ezclipse.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="ch.wess.ezclipse.ini"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="ch.wess.ezclipse.tpl"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="ch.wess.ezclipse.varbrowser"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
