@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Internationalization Fragment
+Bundle-SymbolicName: ch.wess.ezclipse.ini.nl1
+Bundle-Version: 1.0.0
+Bundle-Vendor: Web Engineering Sahli & Stalder
+Fragment-Host: ch.wess.ezclipse.ini;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
